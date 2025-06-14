@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Scene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c1691813cda08c341bfed0090adaf2c0
+  - enabled: 1
+    path: Assets/Scenes/SelectionScene.unity
+    guid: aa0cb16bbceced046be6f3db3962f98e
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 8c69f475779f26f4dbb47d0b901971a6
+  - enabled: 1
+    path: Assets/Scenes/MorningScene.unity
+    guid: 364f0b6d918d6264dad0332080aaa6bc
+  - enabled: 1
+    path: Assets/Scenes/PlanScene.unity
+    guid: f70b4dd173987b54fb313d29489a1182
+  - enabled: 1
+    path: Assets/Scenes/RoadScene.unity
+    guid: dbc2b6b76da149e40b661c86cbac9ca5
+  - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: 9d053bb549ebdce42b81d2c9eaa5317f
+  - enabled: 1
+    path: Assets/Scenes/KitchenScene.unity
+    guid: 303b99266307e674d9411694433c4186
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
