@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 350b14653f48a704293db6d3df0321ee
+guid: f34b0458f63a29e46a7cf76dccca2707
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7822200388625369045
-    second: BoyPijamas_0
+      213: -4594549418809413186
+    second: Shop2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BoyPijamas_0
+      name: Shop2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d700f54fc90e8c60800000000000000
-      internalID: 7822200388625369045
+      spriteID: eb133e485a1ec30c0800000000000000
+      internalID: -4594549418809413186
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BoyPijamas_0: 7822200388625369045
+      Shop2_0: -4594549418809413186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
