@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -8916990592747710742
     second: BoyKitchen_0
+  - first:
+      213: -4694539103698002188
+    second: BoyKitchen_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +106,10 @@ TextureImporter:
       name: BoyKitchen_0
       rect:
         serializedVersion: 2
-        x: 526
-        y: 7
-        width: 412
-        height: 1001
+        x: 45
+        y: 26
+        width: 353
+        height: 825
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +120,28 @@ TextureImporter:
       bones: []
       spriteID: ae6d5c5dc4c704480800000000000000
       internalID: -8916990592747710742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyKitchen_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 25
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe56e3de85a9deb0800000000000000
+      internalID: -4694539103698002188
       vertices: []
       indices: 
       edges: []
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       BoyKitchen_0: -8916990592747710742
+      BoyKitchen_1: -4694539103698002188
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

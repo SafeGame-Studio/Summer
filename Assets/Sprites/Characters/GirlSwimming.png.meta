@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a10d190a3a71cd4499120686f612e00b
+guid: a77c7a86020218e4789dd5658b89bebc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -744509401620340401
-    second: GirlRoad_0
+      213: 5046087159380116034
+    second: GirlSweeming_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GirlRoad_0
+      name: GirlSweeming_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 0
-        width: 614
-        height: 1024
+        x: 81
+        y: 2
+        width: 328
+        height: 406
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f412b70d4a8faa5f0800000000000000
-      internalID: -744509401620340401
+      spriteID: 2420380498d470640800000000000000
+      internalID: 5046087159380116034
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GirlRoad_0: -744509401620340401
+      GirlSweeming_0: 5046087159380116034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
