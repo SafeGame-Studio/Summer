@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -9,13 +10,16 @@ public class Dialogue : MonoBehaviour
     public float lettersPerSecond = 5f;
     public string[] dialogueLines;
 
-    private int currentLine = 0;
+    private int currentLine = -1;
     private Coroutine typingCoroutine;
     private bool isTyping = false;
 
+    public GameObject Zuzik;
+    private Animator animator;
     void Start()
     {
-        dialoguePanel.SetActive(false); // Скрыть панель в начале
+        animator = Zuzik.GetComponent<Animator>();
+        //dialoguePanel.SetActive(false); // Скрыть панель в начале
     }
 
     public void TriggerDialogue()
@@ -50,6 +54,14 @@ public class Dialogue : MonoBehaviour
 
     public void OnNextButton()
     {
+        if(currentLine == -1)
+        {
+            dialoguePanel.SetActive(true);
+        }
+        if (currentLine == -1)
+        {
+            Zuzik.SetActive(true);
+        }
         if (isTyping)
         {
             StopCoroutine(typingCoroutine);
@@ -61,6 +73,11 @@ public class Dialogue : MonoBehaviour
             currentLine++;
             if (currentLine < dialogueLines.Length)
                 ShowCurrentLine();
+            else if (currentLine < dialogueLines.Length - 1)
+            {
+                animator.SetBool("Exit", true);
+            }
+                
             else
                 EndDialogue();
         }
@@ -69,5 +86,7 @@ public class Dialogue : MonoBehaviour
     void EndDialogue()
     {
         dialoguePanel.SetActive(false); // Скрыть панель после завершения
+        int index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(index + 1);
     }
 }
