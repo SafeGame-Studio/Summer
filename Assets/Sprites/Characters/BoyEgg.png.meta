@@ -103,10 +103,10 @@ TextureImporter:
       name: BoyEgg_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 193
-        width: 658
-        height: 1180
+        x: 109
+        y: 178
+        width: 551
+        height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
