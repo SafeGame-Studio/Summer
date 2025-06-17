@@ -3,28 +3,75 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class DialogueLine
+{
+    public string speakerName;
+    [TextArea]
+    public string text;
+}
+
 public class Dialogue : MonoBehaviour
 {
-    public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueText;
-    public float lettersPerSecond = 5f;
-    public string[] dialogueLines;
+    [Header("UI")]
+    public CanvasGroup dialogueGroup;              // Ссылка на CanvasGroup панели
+    public TextMeshProUGUI dialogueText;           // Текст диалога
+    public TextMeshProUGUI speakerNameText;        // Имя говорящего
+    public GameObject clickToContinueIcon;         // Иконка "нажмите, чтобы продолжить" (по желанию)
 
+    [Header("Диалоги")]
+    public DialogueLine[] maleDialogue;
+    public DialogueLine[] femaleDialogue;
+
+    private DialogueLine[] currentDialogue;
     private int currentLine = -1;
     private Coroutine typingCoroutine;
     private bool isTyping = false;
 
-    public GameObject Zuzik;
-    private Animator animator;
+    [Header("Опции")]
+    public bool clickAnywhere = true;
+    public float lettersPerSecond = 20f;
+
+    private bool waitingForFirstClick = false;
+
     void Start()
     {
-        animator = Zuzik.GetComponent<Animator>();
-        //dialoguePanel.SetActive(false); // Скрыть панель в начале
+        HideDialogue();
+
+        // Ждём первый клик для начала диалога
+        waitingForFirstClick = true;
+
+        int characterID = PlayerPrefs.GetInt("SelectedCharacter", 0);
+        currentDialogue = (characterID == 1) ? femaleDialogue : maleDialogue;
+    }
+
+    void Update()
+    {
+        if (!clickAnywhere) return;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (waitingForFirstClick)
+            {
+                waitingForFirstClick = false;
+                TriggerDialogue(); // Показать панель и начать диалог
+            }
+            else if (dialogueGroup.alpha > 0f)
+            {
+                OnNextButton(); // Следующая реплика
+            }
+        }
     }
 
     public void TriggerDialogue()
     {
-        dialoguePanel.SetActive(true);
+        if (currentDialogue.Length == 0)
+        {
+            EndDialogue();
+            return;
+        }
+
+        ShowDialogue();
         currentLine = 0;
         ShowCurrentLine();
     }
@@ -34,59 +81,74 @@ public class Dialogue : MonoBehaviour
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        typingCoroutine = StartCoroutine(TypeText(dialogueLines[currentLine]));
+        DialogueLine line = currentDialogue[currentLine];
+        speakerNameText.text = line.speakerName;
+
+        typingCoroutine = StartCoroutine(TypeText(line.text));
     }
 
-    IEnumerator TypeText(string line)
+    IEnumerator TypeText(string text)
     {
         isTyping = true;
         dialogueText.text = "";
 
-        foreach (char c in line)
+        if (clickToContinueIcon != null)
+            clickToContinueIcon.SetActive(false);
+
+        foreach (char c in text)
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
 
         isTyping = false;
-        typingCoroutine = null;
+
+        if (clickToContinueIcon != null)
+            clickToContinueIcon.SetActive(true);
     }
 
     public void OnNextButton()
     {
-        if(currentLine == -1)
-        {
-            dialoguePanel.SetActive(true);
-        }
-        if (currentLine == -1)
-        {
-            Zuzik.SetActive(true);
-        }
         if (isTyping)
         {
             StopCoroutine(typingCoroutine);
-            dialogueText.text = dialogueLines[currentLine];
+            dialogueText.text = currentDialogue[currentLine].text;
             isTyping = false;
+
+            if (clickToContinueIcon != null)
+                clickToContinueIcon.SetActive(true);
+            return;
+        }
+
+        currentLine++;
+        if (currentLine < currentDialogue.Length)
+        {
+            ShowCurrentLine();
         }
         else
         {
-            currentLine++;
-            if (currentLine < dialogueLines.Length)
-                ShowCurrentLine();
-            else if (currentLine < dialogueLines.Length - 1)
-            {
-                animator.SetBool("Exit", true);
-            }
-                
-            else
-                EndDialogue();
+            EndDialogue();
         }
     }
 
     void EndDialogue()
     {
-        dialoguePanel.SetActive(false); // Скрыть панель после завершения
+        HideDialogue();
         int index = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(index + 1);
+    }
+
+    void ShowDialogue()
+    {
+        dialogueGroup.alpha = 1f;
+        dialogueGroup.interactable = true;
+        dialogueGroup.blocksRaycasts = true;
+    }
+
+    void HideDialogue()
+    {
+        dialogueGroup.alpha = 0f;
+        dialogueGroup.interactable = false;
+        dialogueGroup.blocksRaycasts = false;
     }
 }

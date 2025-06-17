@@ -211,13 +211,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2181560172413284180, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1037
       objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 538
+      value: 535
       objectReference: {fileID: 0}
     - target: {fileID: 4824596455024231846, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -330,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &166176165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -720,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3116442313782000182, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -122.823
+      value: -122.82297
       objectReference: {fileID: 0}
     - target: {fileID: 3116442313782000182, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -742,10 +746,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5997118520736908803, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: Zuzik
       value: 
       objectReference: {fileID: 791584210}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: clickAnywhere
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: dialogueLines.Array.size
       value: 0
@@ -809,11 +821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -1682.96
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -780.19
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -845,11 +857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -122.823
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 68.388824
+      value: -248.87
       objectReference: {fileID: 0}
     - target: {fileID: 1942955401182369878, guid: 0006159e011f12c4184e9bac366b836c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -974,7 +986,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 100
