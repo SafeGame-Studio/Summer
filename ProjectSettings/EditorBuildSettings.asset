@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RoadScene.unity
     guid: dbc2b6b76da149e40b661c86cbac9ca5
   - enabled: 1
+    path: Assets/Scenes/QuizRoadScene.unity
+    guid: 91f413532e6dd3b4791289ba92ef48ff
+  - enabled: 1
     path: Assets/Scenes/ShopScene1.unity
     guid: 9d053bb549ebdce42b81d2c9eaa5317f
   - enabled: 1
@@ -38,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SwimmingScene1.unity
     guid: 2770bf51b2bb8d34d9ece495f024580b
+  - enabled: 1
+    path: Assets/Scenes/QuizSwimmingScene1.unity
+    guid: bcddcc7c267d6a44fbad27fd4f6e17b2
   - enabled: 1
     path: Assets/Scenes/SwimmingScene2.unity
     guid: 8aac308a9efe4b043b6aec18c9057019
