@@ -8,6 +8,7 @@ public class PauseManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         pausePanel.SetActive(false); // При старте скрываем панель
     }
 
@@ -36,6 +37,7 @@ public class PauseManager : MonoBehaviour
 
     public void QuitGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 }
