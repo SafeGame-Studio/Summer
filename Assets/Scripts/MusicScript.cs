@@ -8,7 +8,7 @@ public class MusicScript : MonoBehaviour
     {
         if (Instance == null)
         {
-            audio.volume = 0.5f;
+            audio.volume = 0.05f;
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
