@@ -463,7 +463,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1606459172}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: dialogueLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
@@ -492,6 +500,66 @@ PrefabInstance:
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: 'dialogueLines.Array.data[3]'
       value: 345345
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.data[0].text
+      value: "\u0422\u044B \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043C\u043E\u043B\u043E\u0434\u0435\u0446,
+        \u0447\u0442\u043E \u0441\u043B\u0443\u0448\u0430\u043B \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u043B
+        \u043C\u043E\u0438 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438.
+        \r\n\u0422\u0435\u043F\u0435\u0440\u044C \u0442\u044B \u0443\u043C\u0435\u0435\u0448\u044C
+        \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u0441\u0435\u0431\u0435
+        \u0437\u0430\u0432\u0442\u0440\u0430\u043A, \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442\u044C
+        \u0434\u043E\u0440\u043E\u0433\u0443 \u0438 \r\n\u043A\u0443\u043F\u0430\u0442\u044C\u0441\u044F,
+        \u0430 \u0433\u043B\u0430\u0432\u043D\u043E\u0435, \u0442\u044B \u043D\u0430\u0443\u0447\u0438\u043B\u0441\u044F
+        \u043A\u0430\u043A \u044D\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u0438 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.data[1].text
+      value: "\u042F \u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434, \u0447\u0442\u043E
+        \u0432\u0441\u0435\u043C\u0443 \u044D\u0442\u043E\u043C\u0443 \u043D\u0430\u0443\u0447\u0438\u043B\u0441\u044F,
+        \u0442\u0435\u043F\u0435\u0440\u044C \u044F \u0442\u043E\u0447\u043D\u043E
+        \u0437\u043D\u0430\u044E \u043A\u0430\u043A \r\n\u043F\u0440\u043E\u0432\u0435\u0441\u0442\u0438
+        \u044D\u0442\u043E \u043B\u0435\u0442\u043E \u043A\u043B\u0430\u0441\u0441\u043D\u043E,
+        \u0430 \u0433\u043B\u0430\u0432\u043D\u043E\u0435 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.data[0].text
+      value: "\u0422\u044B \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043C\u043E\u043B\u043E\u0434\u0435\u0446,
+        \u0447\u0442\u043E \u0441\u043B\u0443\u0448\u0430\u043B \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u043B
+        \u043C\u043E\u0438 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438.
+        \r\n\u0422\u0435\u043F\u0435\u0440\u044C \u0442\u044B \u0443\u043C\u0435\u0435\u0448\u044C
+        \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u0441\u0435\u0431\u0435
+        \u0437\u0430\u0432\u0442\u0440\u0430\u043A, \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442\u044C
+        \u0434\u043E\u0440\u043E\u0433\u0443 \u0438 \r\n\u043A\u0443\u043F\u0430\u0442\u044C\u0441\u044F,
+        \u0430 \u0433\u043B\u0430\u0432\u043D\u043E\u0435, \u0442\u044B \u043D\u0430\u0443\u0447\u0438\u043B\u0441\u044F
+        \u043A\u0430\u043A \u044D\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u0438 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.data[1].text
+      value: "\u042F \u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434\u0430, \u0447\u0442\u043E
+        \u0432\u0441\u0435\u043C\u0443 \u044D\u0442\u043E\u043C\u0443 \u043D\u0430\u0443\u0447\u0438\u043B\u0430\u0441\u044C,
+        \u0442\u0435\u043F\u0435\u0440\u044C \u044F \u0442\u043E\u0447\u043D\u043E
+        \u0437\u043D\u0430\u044E \u043A\u0430\u043A \r\n\u043F\u0440\u043E\u0432\u0435\u0441\u0442\u0438
+        \u044D\u0442\u043E \u043B\u0435\u0442\u043E \u043A\u043B\u0430\u0441\u0441\u043D\u043E,
+        \u0430 \u0433\u043B\u0430\u0432\u043D\u043E\u0435 \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.data[0].speakerName
+      value: "\u0416\u0443\u0436\u0438\u043A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.data[1].speakerName
+      value: "\u0421\u0430\u0448\u0430"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.data[0].speakerName
+      value: "\u0416\u0443\u0436\u0438\u043A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.data[1].speakerName
+      value: "\u0421\u0430\u0448\u0430"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -592,11 +660,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -710.9
+      value: -707
       objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 515.4
+      value: 507
       objectReference: {fileID: 0}
     - target: {fileID: 4824596455024231846, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x

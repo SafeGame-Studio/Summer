@@ -817,15 +817,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2181560172413284180, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -738
+      value: -733
       objectReference: {fileID: 0}
     - target: {fileID: 4716101006722042396, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 634
+      value: 627
       objectReference: {fileID: 0}
     - target: {fileID: 4824596455024231846, guid: af9443ef5490a3e4a8fc53e33e1fae64, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1007,16 +1007,34 @@ PrefabInstance:
       value: "\u0442\u0435\u043A\u0441\u0442"
       objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: maleDialogue.Array.data[0].text
+      value: "\u041A\u0430\u043A\u043E\u0435 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E\u0435
+        \u0443\u0442\u0440\u043E! ... \u0425\u043C.. \u0427\u0442\u043E \u044D\u0442\u043E,
+        \u043F\u043E\u0445\u043E\u0436\u0435, \u0442\u0432\u043E\u044F \u043C\u0430\u043C\u0430
+        \r\n\u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0430 \u0442\u0435\u0431\u0435
+        \u0437\u0430\u043F\u0438\u0441\u043A\u0443. \u0414\u0430\u0432\u0430\u0439
+        \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C \u0435\u0435 \u0432\u043C\u0435\u0441\u0442\u0435!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: femaleDialogue.Array.data[0].line
       value: "\u0442\u0435\u043A\u0441\u0442"
       objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
+      propertyPath: femaleDialogue.Array.data[0].text
+      value: "\u041A\u0430\u043A\u043E\u0435 \u043F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E\u0435
+        \u0443\u0442\u0440\u043E! ... \u0425\u043C.. \u0427\u0442\u043E \u044D\u0442\u043E,
+        \u043F\u043E\u0445\u043E\u0436\u0435, \u0442\u0432\u043E\u044F \u043C\u0430\u043C\u0430
+        \r\n\u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0430 \u0442\u0435\u0431\u0435
+        \u0437\u0430\u043F\u0438\u0441\u043A\u0443. \u0414\u0430\u0432\u0430\u0439
+        \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C \u0435\u0435 \u0432\u043C\u0435\u0441\u0442\u0435!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: maleDialogue.Array.data[0].speakerName
-      value: "\u0442\u0443\u0442 \u043A\u0442\u043E \u0433\u043E\u0432\u043E\u0440\u0438\u0442"
+      value: "\u0416\u0443\u0436\u0438\u043A"
       objectReference: {fileID: 0}
     - target: {fileID: 6735328605632681318, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: femaleDialogue.Array.data[0].speakerName
-      value: "\u0438 \u0442\u0443\u0442 \u043A\u0442\u043E \u0433\u043E\u0432\u043E\u0440\u0438\u0442"
+      value: "\u0416\u0443\u0436\u0438\u043A"
       objectReference: {fileID: 0}
     - target: {fileID: 7520931206625640854, guid: 03882150b7b704043992c85cb0c0ed72, type: 3}
       propertyPath: m_IsActive
